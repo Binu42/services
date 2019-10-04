@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#home-section {
+    background-image: url('../img/connect.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    position: relative;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.navbar.navbar-custom .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
+}
+
+.navbar {
+    background-color: transparent;
+    border-bottom: 2px solid;
+    -moz-border-image: -moz-linear-gradient(to left, #79cc9e 0%, #beedec 25%, #c5ceff 50%, #cabd96 75%, #b591c7 100%);
+    -webkit-border-image: -webkit-linear-gradient(to left, #79cc9e 0%, #beedec 25%, #c5ceff 50%, #cabd96 75%, #b591c7 100%);
+    border-image: linear-gradient(to left, #f52121, #0ef3ef, #28e90e, #f01b1b);
+    border-image-slice: 1;
+}
+
+.navbar-brand {
+    color: aqua !important;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.navbar a {
+    color: #353535;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: aqua;
+}
+
+#home-section .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 650px;
+    background: rgba(128, 128, 128, 0.548);
+}
+
+.home-inner {
+    margin-top: 120px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #cacaca;
+    background-color: transparent;
+}
+
+input::placeholder {
+    color: #2b2b2c;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #333;
+}
+
+.btn-try {
+    color: wheat;
+    background-color: #f01b1b;
+    padding: 10px;
+}
+
+.btn-try:hover {
+    opacity: 0.8;
+}
+
+.btn-explore {
+    color: rgb(36, 35, 33);
+    background-color: #17d5f7;
+    padding: 10px 20px;
+}
+
+.btn-explore:hover {
+    opacity: 0.8;
+}
+
+hr {
+    width: 42%;
+    border: none;
+    border-top: 1px solid #5f5956;
+}
+
+#home-icons hr {
+    width: 50px;
+    border: none;
+    border-top: 4px solid greenyellow;
+}
+
+.icons-head--details {
+    font-size: 22px;
+}
+
+.icons-head--details::before {
+    content: open-quote;
+}
+
+.icons-head--details::after {
+    content: close-quote;
+}
+
+.mission-text {
+    font-size: 1.2rem;
+}
+
+#improvement {
+    background-image: url('../img/improvement.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+
+#improvement .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#improvement hr {
+    width: 50px;
+    border: none;
+    border-top: 4px solid #dddddd;
+}
+
+.improvement-num2,
+.improvement-num3,
+.improvement-num1 {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto 0;
+}
+
+.improvement-num1 {
+    border: 2px solid coral;
+    border-radius: 100%;
+}
+
+.improvement-num2 {
+    border: 2px solid #50fff6;
+    border-radius: 100%;
+}
+
+.improvement-num3 {
+    border: 2px solid #50fff6;
+    border-radius: 100%;
+}
+
+@media(max-width: 48rem) {
+    .w-100 {
+        font-size: 2.5rem;
+    }
+
+    .signup-msg {
+        font-size: 2rem;
+    }
+
+    #improvement {
+        height: 950px;
+    }
+}
+
+@media(min-width: 48rem) {
+    #mission-img {
+        height: 600px;
+    }
+
+    #mission-img img {
+        height: 600px;
+    }
+
+    .mission-card {
+        height: 600px;
+    }
+}
