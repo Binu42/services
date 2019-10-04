@@ -137,7 +137,7 @@ hr {
     transform: translate(-50%, -50%);
 }
 
-#improvement hr {
+#improvement hr, #gallery hr {
     width: 50px;
     border: none;
     border-top: 4px solid #dddddd;
@@ -155,7 +155,7 @@ hr {
 }
 
 .improvement-num1 {
-    border: 2px solid coral;
+    border: 2px solid #ec372a;
     border-radius: 100%;
 }
 
@@ -165,7 +165,7 @@ hr {
 }
 
 .improvement-num3 {
-    border: 2px solid #50fff6;
+    border: 2px solid #069bff;
     border-radius: 100%;
 }
 
