@@ -1,23 +1,19 @@
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
 #home-section {
     background-image: url('../img/connect.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 650px;
     position: relative;
 }
 
 .w-100 {
-    width: 100%;
+    width: 95%;
 }
 
 .navbar.navbar-custom .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=333');
 }
 
 .navbar {
@@ -30,9 +26,14 @@ body {
 }
 
 .navbar-brand {
-    color: aqua !important;
+    color: #cf2222 !important;
     font-size: 24px;
     font-weight: bolder;
+}
+
+.navbar.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
 }
 
 .navbar a {
@@ -44,13 +45,18 @@ body {
     color: aqua;
 }
 
+.navbar .dropdown .dropdown-item:hover {
+    color: #f52121;
+    background: #9b9b9b4d;
+}
+
 #home-section .dark-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     min-height: 650px;
-    background: rgba(128, 128, 128, 0.548);
+    background: rgba(184, 184, 184, 0.548);
 }
 
 .home-inner {
@@ -61,17 +67,18 @@ input {
     padding: 10px;
     border-radius: 5px;
     border: none;
-    border: 1px solid #cacaca;
+    border: 1px solid #494949;
     background-color: transparent;
 }
 
 input::placeholder {
-    color: #2b2b2c;
+    color: #0a0a0a;
 }
 
 input:focus {
     outline: none;
-    border: 1px solid #333;
+    border: 1px solid rgb(26, 26, 26);
+    box-shadow: 2px 1px 1px 0 #333;
 }
 
 .btn-try {
@@ -130,14 +137,15 @@ hr {
     position: relative;
 }
 
-#improvement .container{
+#improvement .container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-#improvement hr, #gallery hr {
+#improvement hr,
+#gallery hr {
     width: 50px;
     border: none;
     border-top: 4px solid #dddddd;
@@ -155,18 +163,78 @@ hr {
 }
 
 .improvement-num1 {
-    border: 2px solid #ec372a;
+    border: 2px solid #ff5e1e;
     border-radius: 100%;
 }
 
 .improvement-num2 {
-    border: 2px solid #50fff6;
+    border: 2px solid #18fafa;
     border-radius: 100%;
 }
 
 .improvement-num3 {
-    border: 2px solid #069bff;
+    border: 2px solid #3cfa16;
     border-radius: 100%;
+}
+
+#latest img:hover,
+#gallery img:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+    transition: 500ms ease-in all;
+}
+
+.search-form input {
+    width: 100%;
+}
+
+.fa-facebook-f {
+    color: #0077ff;
+}
+
+.fa-twitter {
+    color: #00fffb;
+}
+
+.fa-linkedin-in {
+    color: #70fffd;
+}
+
+.fa-instagram {
+    color: #f55d21;
+}
+
+.borderless{
+    border: none;
+}
+
+.fa-check{
+    color: #28e90e;
+    font-size: 20px;
+}
+
+.fa-times{
+    color: #f52121;
+    font-size: 20px;
+}
+
+.fa-dollar-sign{
+    color: #353535;
+    font-size: 20px;
+}
+
+td{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #333;
+}
+
+@media(max-width: 65rem) {
+    .navbar-collapse {
+        background: #fff;
+        margin: -0.02rem -1rem 0.2rem -1rem;
+        padding: 2rem;
+    }
 }
 
 @media(max-width: 48rem) {
@@ -179,13 +247,17 @@ hr {
     }
 
     #improvement {
-        height: 950px;
+        height: 970px;
     }
 }
 
 @media(min-width: 48rem) {
     #mission-img {
         height: 600px;
+    }
+
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
     }
 
     #mission-img img {
