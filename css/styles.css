@@ -124,6 +124,14 @@ input:focus {
     opacity: 0.8;
 }
 
+.btn-search{
+    background-color: #e4e4e45b;
+}
+
+.btn-search:hover{
+    opacity: 0.8;
+}
+
 hr {
     width: 42%;
     border: none;

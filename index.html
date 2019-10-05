@@ -56,8 +56,11 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-success" class="nav-link" data-toggle="modal" data-target="#exampleModal"><i
+                        <a class="btn btn-search" class="nav-link" data-toggle="modal" data-target="#exampleModal"><i
                                 class="fa fa-search-plus"></i></a>
+                    </li>
+                    <li class="nav-item ml-md-2">
+                        <a class="btn btn-success" class="nav-link" data-toggle="modal" data-target="#login"><i class="fas fa-sign-in-alt"></i>&emsp;SignIn</a>
                     </li>
                 </ul>
             </div>
@@ -84,6 +87,34 @@
                             <small class="text-danger">Please search for valid things</small>
                             <br>
                             <button type="submit" class="btn btn-success mt-2">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-uppercase" id="loginTitle">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="email" class="text-dark">E-mail</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your E-mail" required>
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                            <button type="submit" class="btn btn-success mt-2">Login</button>
                         </div>
                     </form>
                 </div>
@@ -367,8 +398,8 @@
                                                 <div class="form-group">
                                                     <input type="text" placeholder="Enter the forum title"
                                                         class="form-control" required>
-                                                    <textarea name="" placeholder="Discuss"
-                                                        class="mt-2 form-control" required></textarea>
+                                                    <textarea name="" placeholder="Discuss" class="mt-2 form-control"
+                                                        required></textarea>
                                                     <button type="submit" class="mt-2 btn btn-success">Discuss</button>
                                                 </div>
                                             </form>
