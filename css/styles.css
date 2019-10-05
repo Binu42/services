@@ -1,3 +1,22 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(151, 151, 151);
+    width: 5px;
+    border-radius: 5px;
+}
+
 #home-section {
     background-image: url('../img/connect.jpg');
     background-size: cover;
@@ -32,17 +51,21 @@
 }
 
 .navbar.scrolled {
-    background-color: #fff !important;
+    background-color: #2f2f2f !important;
     transition: background-color 200ms linear;
 }
 
 .navbar a {
-    color: #353535;
+    color: #ffffff;
     font-weight: bold;
 }
 
 .navbar a:hover {
     color: aqua;
+}
+
+.navbar .dropdown .dropdown-item {
+    color: #252525;
 }
 
 .navbar .dropdown .dropdown-item:hover {
@@ -56,7 +79,7 @@
     left: 0;
     width: 100%;
     min-height: 650px;
-    background: rgba(184, 184, 184, 0.548);
+    background: rgba(97, 97, 97, 0.548);
 }
 
 .home-inner {
@@ -204,34 +227,49 @@ hr {
     color: #f55d21;
 }
 
-.borderless{
+.borderless {
     border: none;
 }
 
-.fa-check{
+.fa-check {
     color: #28e90e;
     font-size: 20px;
 }
 
-.fa-times{
+.fa-times {
     color: #f52121;
     font-size: 20px;
 }
 
-.fa-dollar-sign{
+.fa-dollar-sign {
     color: #353535;
     font-size: 20px;
 }
 
-td{
+table {
+    margin-top: 40px;
+}
+
+table td, th {
     text-transform: capitalize;
     font-size: 20px;
     color: #333;
+    height: 70px;
+    padding: 20px;
+    vertical-align: bottom;
+}
+
+#borderless{
+    border: 0;
+}
+
+footer {
+    background-color: #333;
 }
 
 @media(max-width: 65rem) {
     .navbar-collapse {
-        background: #fff;
+        background: #2f2f2f;
         margin: -0.02rem -1rem 0.2rem -1rem;
         padding: 2rem;
     }
